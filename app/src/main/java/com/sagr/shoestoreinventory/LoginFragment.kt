@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.sagr.shoestoreinventory.databinding.FragmentLoginBinding
 
 
@@ -20,11 +21,13 @@ class LoginFragment : Fragment() {
         val binding = FragmentLoginBinding.inflate(inflater)
 
         binding.loginButton.setOnClickListener {
-            Toast.makeText(context, "Login", Toast.LENGTH_SHORT).show()
+            this.findNavController()
+                .navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
 
         binding.registerButton.setOnClickListener {
-            Toast.makeText(context, "Registration", Toast.LENGTH_SHORT).show()
+            this.findNavController()
+                .navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
         return binding.root
     }
