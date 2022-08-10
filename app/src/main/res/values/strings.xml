@@ -11,4 +11,8 @@
     <string name="welcome_to_our_app">Welcome to our app !</string>
     <string name="next">Next</string>
     <string name="welcome_desc">Welcome to Shoe Store Inventory App , part of Advanced Android Kotlin Nanodegree</string>
+    <string name="instruction_image">Instruction Image</string>
+    <string name="instructions">Instructions!</string>
+    <string name="instructions_desc">Here is the instructions , in the next screen you will see all shoes in inventory and you can add new shoes</string>
+    <string name="let_s_start">Let\'s start</string>
 </resources>

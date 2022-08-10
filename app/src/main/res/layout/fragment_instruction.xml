@@ -3,21 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        tools:context=".WelcomeFragment">
+        tools:context=".InstructionFragment">
 
 
         <ImageView
-            android:id="@+id/welcome_image"
+            android:id="@+id/instructions_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/welcome_image"
-            android:src="@drawable/welcome_image"
+            android:contentDescription="@string/instruction_image"
+            android:src="@drawable/instruction_image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -26,39 +25,41 @@
             app:layout_constraintVertical_bias="0.3" />
 
         <TextView
-            android:id="@+id/welcome_textView"
+            android:id="@+id/instructions_text"
             style="@style/labelTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/welcome_to_our_app"
+            android:text="@string/instructions"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcome_image" />
+            app:layout_constraintTop_toBottomOf="@+id/instructions_image" />
 
         <TextView
-            android:id="@+id/welcome_desc_textView"
+            android:id="@+id/instructions_desc_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/welcome_desc"
+            android:text="@string/instructions_desc"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcome_textView" />
+            app:layout_constraintTop_toBottomOf="@+id/instructions_text" />
 
         <Button
-            android:id="@+id/next_button"
+            android:id="@+id/start_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/next"
+            android:text="@string/let_s_start"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcome_desc_textView" />
+            app:layout_constraintTop_toBottomOf="@+id/instructions_desc_text" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

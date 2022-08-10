@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.sagr.shoestoreinventory.LoginFragment"
-        android:label="Login" >
+        android:label="Login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
@@ -15,5 +15,13 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.sagr.shoestoreinventory.WelcomeFragment"
-        android:label="WelcomeFragment" />
+        android:label="Welcome!">
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.sagr.shoestoreinventory.InstructionFragment"
+        android:label="Instructions" />
 </navigation>
