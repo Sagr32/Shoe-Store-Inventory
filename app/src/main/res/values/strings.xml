@@ -15,4 +15,6 @@
     <string name="instructions">Instructions!</string>
     <string name="instructions_desc">Here is the instructions , in the next screen you will see all shoes in inventory and you can add new shoes</string>
     <string name="let_s_start">Let\'s start</string>
+    <string name="add_button">Add button</string>
+    <string name="shoe_list_scroll_view">Shoe list Scroll View</string>
 </resources>
