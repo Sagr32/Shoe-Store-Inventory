@@ -14,6 +14,10 @@ class ShoeListViewModel : ViewModel() {
     val shoeList: LiveData<MutableList<ShoeModel>>
         get() = _shoeList
 
+    var newShoeName = ""
+    var shoeSize = ""
+    var companyName = ""
+    var description = ""
 
     init {
 
@@ -23,7 +27,7 @@ class ShoeListViewModel : ViewModel() {
 
     }
 
-    fun addNewShoe(shoe: ShoeModel) {
+    private fun addNewShoe(shoe: ShoeModel) {
         shoesArrayList.add(
             ShoeModel(
                 shoe.shoeName,
@@ -33,12 +37,11 @@ class ShoeListViewModel : ViewModel() {
             )
         )
         _shoeList.value = shoesArrayList
-        Log.v("Inside", _shoeList.value?.size.toString())
 
     }
 
-    fun saveShoe(shoe: ShoeModel) {
-        addNewShoe(shoe)
+    fun saveShoe() {
+        addNewShoe(ShoeModel(newShoeName, companyName, shoeSize.toIntOrNull() ?: 44, description))
 
     }
 

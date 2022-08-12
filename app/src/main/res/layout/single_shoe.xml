@@ -9,7 +9,9 @@
             name="shoe"
             type="com.sagr.shoestoreinventory.models.ShoeModel" />
     </data>
-
+    <!--
+Use constraintlayout as in that way we won't use nested layout to set view as we want
+-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
         android:layout_width="match_parent"

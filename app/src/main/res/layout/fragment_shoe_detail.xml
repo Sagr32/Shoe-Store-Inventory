@@ -3,10 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <data>
 
+        <variable
+            name="viewModel"
+            type="com.sagr.shoestoreinventory.viewmodels.ShoeListViewModel" />
     </data>
-
+    <!--
+    Use constraintlayout to have complex ui with bias
+    that gives beautiful look
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
         android:layout_width="match_parent"
@@ -46,6 +53,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:text="@={viewModel.newShoeName}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shoeNameText" />
@@ -69,6 +77,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:text="@={viewModel.companyName}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/companyNameText" />
@@ -91,6 +100,7 @@
             android:importantForAutofill="no"
             android:inputType="number"
             android:minHeight="48dp"
+            android:text="@={viewModel.shoeSize}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shoeSizeText" />
@@ -114,6 +124,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:text="@={viewModel.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/descriptionText" />

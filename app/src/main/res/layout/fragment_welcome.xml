@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
 
+    <!--
+Use constraintlayout to have complex ui with bias
+that gives beautiful look
+-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
         android:layout_width="match_parent"

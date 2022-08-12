@@ -21,13 +21,10 @@ class ShoeDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentShoeDetailBinding.inflate(inflater)
-
+        binding.viewModel = viewModel
         binding.saveButton.setOnClickListener {
-            val shoeName: String = binding.shoeNameEdit.text.toString()
-            val companyName: String = binding.companyNameEdit.text.toString()
-            val shoeSize = binding.shoeSizeEdit.text.toString().toIntOrNull() ?: 45
-            val description = binding.descriptionEdit.text.toString()
-            viewModel.saveShoe(ShoeModel(shoeName, companyName, shoeSize, description))
+
+            viewModel.saveShoe()
             this.findNavController()
                 .navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeList())
         }
