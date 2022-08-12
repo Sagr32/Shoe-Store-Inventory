@@ -1,4 +1,3 @@
 package com.sagr.shoestoreinventory.models
 
-class ShoeModel {
-}
+data class ShoeModel (var shoeName:String , var companyName:String , var shoeSize:Int ,var description: String)

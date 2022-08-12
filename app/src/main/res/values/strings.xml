@@ -17,4 +17,12 @@
     <string name="let_s_start">Let\'s start</string>
     <string name="add_button">Add button</string>
     <string name="shoe_list_scroll_view">Shoe list Scroll View</string>
+    <string name="enter_shoe_details">Enter Shoe Details</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="company_name">Company name</string>
+    <string name="shoe_size">Shoe size</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="description">Description</string>
+    <string name="logout">Logout</string>
 </resources>

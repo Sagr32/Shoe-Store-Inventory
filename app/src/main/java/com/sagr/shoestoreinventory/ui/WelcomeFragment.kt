@@ -15,7 +15,6 @@ class WelcomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentWelcomeBinding.inflate(inflater)
-        // Inflate the layout for this fragment
 
 
         binding.nextButton.setOnClickListener {
